@@ -8,7 +8,6 @@ public class Bullet2 : BaseBullet
     public float force;
 
     private Vector3 vectorFly = new Vector3(0, 5, 8);
-    [SerializeField] private GameObject particleEffectPrefab;
 
     protected override void Start()
     {
@@ -17,7 +16,6 @@ public class Bullet2 : BaseBullet
     protected override void OnCollisionEnter(Collision collision)
     {
         Explode();
-        Instantiate(particleEffectPrefab, transform.position, Quaternion.identity);
         base.OnCollisionEnter(collision);
     }
     private void Explode()

@@ -49,8 +49,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 100
-  liveTime: 2
+  liveTime: 0
   rb: {fileID: 0}
+  particleEffectPrefab: {fileID: 1280141305896002, guid: e473029e4c70ad543a6879b82a732f4f, type: 3}
 --- !u!33 &4635628577847639569
 MeshFilter:
   m_ObjectHideFlags: 0
